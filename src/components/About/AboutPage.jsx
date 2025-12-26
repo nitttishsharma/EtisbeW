@@ -7,7 +7,6 @@ import TimelineSection from './TimelineSection';
 import AchievementsSection from './AchievementsSection';
 import TestimonialsSection from './TestimonialsSection';
 import CTASection from './CTASection';
-import FooterSection from './FooterSection';
 
 const AboutPage = () => {
     const heroData = {
@@ -242,59 +241,63 @@ const AboutPage = () => {
     ];
 
     return (
-        <main className="min-h-screen bg-white">
-            <div className="pt-16">
+        <main className="min-h-screen bg-[#0A192F] text-white">
+            <div className="pt-20">
                 <HeroSection {...heroData} />
 
-                <PhilosophySection
-                    title="Our Core Philosophy"
-                    subtitle="The principles that guide everything we create"
-                    philosophies={philosophies}
-                />
+                <div className="section-padding">
+                    <PhilosophySection
+                        title="Our Core Philosophy"
+                        subtitle="The principles that guide everything we create"
+                        philosophies={philosophies}
+                    />
+                </div>
 
-                <TeamSection
-                    title="Meet Our Team"
-                    subtitle="The people behind the work"
-                    members={teamMembers}
-                />
+                <div className="section-padding bg-[#112240]/50">
+                    <TeamSection
+                        title="Meet Our Team"
+                        subtitle="The people behind the work"
+                        members={teamMembers}
+                    />
+                </div>
 
-                <TimelineSection
-                    title="Our Journey"
-                    subtitle="From vision to reality"
-                    events={timelineEvents}
-                />
+                <div className="section-padding">
+                    <TimelineSection
+                        title="Our Journey"
+                        subtitle="From vision to reality"
+                        events={timelineEvents}
+                    />
+                </div>
 
-                <AchievementsSection
-                    title="Our Impact"
-                    achievements={achievements}
-                />
+                <div className="section-padding bg-[#112240]/50">
+                    <AchievementsSection
+                        title="Our Impact"
+                        achievements={achievements}
+                    />
+                </div>
 
-                <TestimonialsSection
-                    title="What Clients Say"
-                    subtitle="Real partnerships, real results"
-                    testimonials={testimonials}
-                />
+                <div className="section-padding">
+                    <TestimonialsSection
+                        title="What Clients Say"
+                        subtitle="Real partnerships, real results"
+                        testimonials={testimonials}
+                    />
+                </div>
 
-                <CTASection
-                    title="Ready to Manifest Your Vision?"
-                    description="Let’s build something remarkable together."
-                    primaryCTA={{ text: 'Start Your Project', href: '/contact' }}
-                    secondaryCTA={{ text: 'Schedule a Call', href: '/contact' }}
-                />
-
-                <FooterSection
-                    columns={footerColumns}
-                    socialLinks={{
-                        linkedin: '#',
-                        twitter: '#',
-                        github: '#',
-                        instagram: '#',
-                    }}
-                    companyName="Etisbew Interactive"
-                />
+                <div className="section-padding bg-[#112240]/50">
+                    <CTASection
+                        title="Ready to Manifest Your Vision?"
+                        description="Let’s build something remarkable together."
+                        primaryCTA={{ text: 'Start Your Project', href: '/contact' }}
+                        secondaryCTA={{ text: 'Schedule a Call', href: '/contact' }}
+                    />
+                </div>
             </div>
         </main>
     );
 };
 
 export default AboutPage;
+
+
+

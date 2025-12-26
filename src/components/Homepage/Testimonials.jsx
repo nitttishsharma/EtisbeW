@@ -142,8 +142,8 @@ const Testimonials = () => {
                                 key={i}
                                 onClick={() => setActiveIndex(i)}
                                 className={`h-2 rounded-full transition-all ${i === activeIndex
-                                        ? 'w-8 bg-teal-500'
-                                        : 'w-2 bg-gray-300 hover:bg-gray-400'
+                                    ? 'w-8 bg-teal-500'
+                                    : 'w-2 bg-gray-300 hover:bg-gray-400'
                                     }`}
                             />
                         ))}
@@ -175,3 +175,6 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+
+

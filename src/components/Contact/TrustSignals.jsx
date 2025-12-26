@@ -9,13 +9,13 @@ const TrustSignals = ({ stats }) => {
                         const Icon = stat.icon;
                         return (
                             <div key={stat.id} className="text-center group">
-                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 text-gray-400 mb-4 group-hover:bg-purple-500/20 group-hover:text-purple-400 transition-colors duration-300">
+                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 text-slate-400 mb-4 group-hover:bg-[#00EFB5]/20 group-hover:text-[#00EFB5] transition-colors duration-300">
                                     <Icon size={20} />
                                 </div>
                                 <div className="text-3xl font-bold text-white mb-1 tracking-tight">
                                     {stat.value}
                                 </div>
-                                <div className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+                                <div className="text-sm font-medium text-slate-500 uppercase tracking-wider">
                                     {stat.label}
                                 </div>
                             </div>
@@ -28,3 +28,6 @@ const TrustSignals = ({ stats }) => {
 };
 
 export default TrustSignals;
+
+
+

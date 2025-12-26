@@ -12,13 +12,13 @@ const iconMap = {
 
 const PhilosophySection = ({ title, subtitle, philosophies }) => {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-10 bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                         {title}
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                         {subtitle}
                     </p>
                 </div>
@@ -29,15 +29,15 @@ const PhilosophySection = ({ title, subtitle, philosophies }) => {
                         return (
                             <div
                                 key={index}
-                                className="group bg-gray-50 border border-gray-200 rounded-xl p-8 hover:border-teal-400 hover:shadow-lg transition-all"
+                                className="group bg-[#112240] border border-[#00EFB5]/10 rounded-xl p-8 hover:border-[#00EFB5]/50 hover:shadow-[0_0_30px_rgba(0,239,181,0.1)] transition-all"
                             >
-                                <div className="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-500 transition-colors">
-                                    <Icon size={24} className="text-teal-500 group-hover:text-white transition-colors" />
+                                <div className="w-12 h-12 bg-[#00EFB5]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#00EFB5] transition-colors">
+                                    <Icon size={24} className="text-[#00EFB5] group-hover:text-[#0A192F] transition-colors" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                <h3 className="text-xl font-bold text-white mb-3">
                                     {philosophy.title}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-slate-400 leading-relaxed">
                                     {philosophy.description}
                                 </p>
                             </div>
@@ -50,3 +50,6 @@ const PhilosophySection = ({ title, subtitle, philosophies }) => {
 };
 
 export default PhilosophySection;
+
+
+

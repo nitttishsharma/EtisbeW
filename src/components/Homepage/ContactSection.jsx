@@ -44,7 +44,7 @@ const Contact = () => {
                     <p className="text-teal-200 text-lg mb-12">Ready to transform your digital presence? Reach out and let's manifest your vision.</p>
 
                     <div className="space-y-8">
-                        <div className="bg-white/5 p-6 rounded-lg border-l-4 border-teal-500">
+                        <div className="bg-white/5 p-6 rounded-lg border-l-4 border-purple-500">
                             <p className="text-xl italic mb-4">"Etisbew didn't just build a site; they built a legacy key for us. The traffic spike was immediate."</p>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 bg-gray-300 rounded-full" />
@@ -73,7 +73,7 @@ const Contact = () => {
                                     <motion.input
                                         animate={errors.name ? { x: [-10, 10, -10, 10, 0] } : {}}
                                         type="text"
-                                        className={`w-full p-4 bg-gray-50 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:border-teal-500 focus:outline-none transition-colors`}
+                                        className={`w-full p-4 bg-gray-50 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:border-purple-500 focus:outline-none transition-colors`}
                                         value={formState.name}
                                         onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                                         placeholder="John Doe"
@@ -86,7 +86,7 @@ const Contact = () => {
                                     <motion.input
                                         animate={errors.email ? { x: [-10, 10, -10, 10, 0] } : {}}
                                         type="email"
-                                        className={`w-full p-4 bg-gray-50 rounded-lg border ${errors.email ? 'border-red-500' : 'border-gray-200'} focus:border-teal-500 focus:outline-none transition-colors`}
+                                        className={`w-full p-4 bg-gray-50 rounded-lg border ${errors.email ? 'border-red-500' : 'border-gray-200'} focus:border-purple-500 focus:outline-none transition-colors`}
                                         value={formState.email}
                                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                                         placeholder="john@example.com"
@@ -97,7 +97,7 @@ const Contact = () => {
                                 <div>
                                     <label className="block text-sm font-bold mb-2">Message</label>
                                     <textarea
-                                        className="w-full p-4 bg-gray-50 rounded-lg border border-gray-200 focus:border-teal-500 focus:outline-none transition-colors h-32 resize-none"
+                                        className="w-full p-4 bg-gray-50 rounded-lg border border-gray-200 focus:border-purple-500 focus:outline-none transition-colors h-32 resize-none"
                                         value={formState.message}
                                         onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                                         placeholder="Tell us about your flip..."
@@ -123,20 +123,20 @@ const Contact = () => {
                                 <motion.div
                                     initial={{ scale: 0 }}
                                     animate={{ scale: 1, rotate: 360 }}
-                                    className="w-20 h-20 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-6"
+                                    className="w-20 h-20 bg-teal-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-6"
                                 >
                                     <CheckCircle size={40} />
                                 </motion.div>
                                 <h3 className="text-3xl font-serif text-navy mb-4">Flip Initiated!</h3>
-                                <p className="text-gray-600 mb-8">We've received your signal. Expect a response within 24 hours.</p>
-                                <button onClick={() => { setIsSuccess(false); setFormState({ name: '', email: '', message: '' }) }} className="text-teal-500 hover:text-teal-700 font-medium">
+                                <p className="text-gray-300 mb-8">We've received your signal. Expect a response within 24 hours.</p>
+                                <button onClick={() => { setIsSuccess(false); setFormState({ name: '', email: '', message: '' }) }} className="text-purple-500 hover:text-teal-700 font-medium">
                                     Send another message
                                 </button>
 
                                 {/* Simple CSS Particles/Confetti */}
                                 <div className="absolute inset-0 pointer-events-none overflow-hidden">
                                     {[...Array(20)].map((_, i) => (
-                                        <div key={i} className="absolute w-2 h-2 bg-teal-400 rounded-full animate-ping" style={{
+                                        <div key={i} className="absolute w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{
                                             top: `${Math.random() * 100}%`,
                                             left: `${Math.random() * 100}%`,
                                             animationDelay: `${Math.random()}s`,
@@ -154,3 +154,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+

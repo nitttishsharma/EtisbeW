@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import {
     Code2,
     Smartphone,
-    Rocket,
-    Cuboid,
+    Layout,
+    Globe,
     CheckCircle,
     ArrowRight,
     Sparkles
@@ -22,7 +22,7 @@ const services = [
     },
     {
         id: 2,
-        icon: Smartphone,
+        icon: Layout,
         title: 'Responsive Design Systems',
         description:
             'Pixel-perfect interfaces that adapt seamlessly across all devices and screen sizes.',
@@ -30,19 +30,19 @@ const services = [
     },
     {
         id: 3,
-        icon: Rocket,
-        title: 'Performance Engineering',
+        icon: Smartphone,
+        title: 'Mobile App Development',
         description:
-            'Lightning-fast load times and smooth 60fps interactions that keep users engaged.',
-        features: ['Speed Optimization', 'Core Web Vitals', 'SEO Excellence'],
+            'Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android.',
+        features: ['Cross-Platform Apps', 'Native Performance', 'App Store Optimization'],
     },
     {
         id: 4,
-        icon: Cuboid,
-        title: 'Custom Interactions',
+        icon: Globe,
+        title: 'WordPress Development',
         description:
-            'Unique, branded experiences with geometric animations and cursor-responsive elements.',
-        features: ['Geometric Shapes', 'Floating Elements', 'Brand Storytelling'],
+            'Custom WordPress solutions with powerful themes, plugins, and seamless content management.',
+        features: ['Custom Themes', 'Plugin Development', 'WooCommerce Integration'],
     },
 ];
 
@@ -119,3 +119,6 @@ const Services = () => {
 };
 
 export default Services;
+
+
+

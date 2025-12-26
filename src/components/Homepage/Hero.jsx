@@ -85,7 +85,7 @@ const Hero = () => {
                     </Link>
                     <Link to="/portfolio" className="btn btn-outline group flex items-center justify-center gap-2">
                         Explore Our Work
-                        <Sparkles size={20} className="group-hover:text-teal-400 transition-colors" />
+                        <Sparkles size={20} className="group-hover:text-purple-400 transition-colors" />
                     </Link>
                 </motion.div>
             </motion.div>
@@ -94,3 +94,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+

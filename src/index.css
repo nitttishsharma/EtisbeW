@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --navy: #1A237E;
-  --teal: #00BFA5;
-  --white: #FFFFFF;
-  --gray: #F5F5F5;
+  --navy: #0A192F;
+  --navy-light: #112240;
+  --teal: #00EFB5;
+  --teal-dark: #00BA8F;
+  --white: #F8FAFC;
+  --slate: #94A3B8;
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
 }
@@ -19,8 +21,8 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--white);
-  color: var(--navy);
+  background-color: var(--navy);
+  color: var(--white);
   line-height: 1.5;
   overflow-x: hidden;
 }
@@ -33,6 +35,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
+  color: var(--white);
 }
 
 .btn {
@@ -99,6 +102,19 @@ h6 {
   font-family: monospace;
   font-size: 14px;
   animation: rain linear infinite;
+}
+
+/* Section Spacing */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 /* Custom Scrollbar */

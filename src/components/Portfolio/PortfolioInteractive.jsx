@@ -227,7 +227,7 @@ const PortfolioInteractive = () => {
     }, []);
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-[#0A192F]">
             <PortfolioHero {...heroData} />
 
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
@@ -273,3 +273,6 @@ const PortfolioInteractive = () => {
 };
 
 export default PortfolioInteractive;
+
+
+

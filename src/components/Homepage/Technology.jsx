@@ -20,8 +20,8 @@ const technologies = [
     { id: 4, name: 'Tailwind CSS', category: 'Styling', icon: Paintbrush },
     { id: 5, name: 'Node.js', category: 'Backend', icon: Server },
     { id: 6, name: 'Three.js', category: '3D Graphics', icon: Box },
-    { id: 7, name: 'GSAP', category: 'Animation', icon: Zap },
-    { id: 8, name: 'WebGL', category: 'Graphics', icon: Sparkles },
+    { id: 7, name: 'WordPress', category: 'Animation', icon: Zap },
+    { id: 8, name: 'Shopify', category: 'Graphics', icon: Sparkles },
 ];
 
 const categories = [...new Set(technologies.map(t => t.category))];
@@ -72,58 +72,12 @@ const Technology = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* CTA / Stats */}
-                <div className="bg-white border border-gray-200 rounded-xl p-8 lg:p-12">
-                    <div className="grid lg:grid-cols-2 gap-8 items-center">
-
-                        {/* Left */}
-                        <div>
-                            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                                Explore Our Technology Playground
-                            </h3>
-
-                            <p className="text-gray-600 text-lg mb-6">
-                                Experience interactive demos of modern web technologies and see
-                                how we push boundaries with performance, motion, and design.
-                            </p>
-
-                            <Link
-                                to="/services"
-                                className="inline-flex items-center px-6 py-3 text-base font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-all duration-300 hover:scale-105"
-                            >
-                                Visit Playground
-                                <ArrowRight size={20} className="ml-2" />
-                            </Link>
-                        </div>
-
-                        {/* Right stats */}
-                        <div className="grid grid-cols-2 gap-4">
-                            {categories.map(category => (
-                                <div
-                                    key={category}
-                                    className="bg-teal-500/5 border border-teal-500/20 rounded-xl p-6 text-center"
-                                >
-                                    <div className="text-3xl font-bold text-teal-500 mb-2">
-                                        {
-                                            technologies.filter(
-                                                tech => tech.category === category
-                                            ).length
-                                        }+
-                                    </div>
-                                    <div className="text-sm text-gray-600">
-                                        {category}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </section>
     );
 };
 
 export default Technology;
+
+
+

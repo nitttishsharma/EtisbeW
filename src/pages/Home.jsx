@@ -5,7 +5,6 @@ import Services from '../components/Homepage/Services';
 import Portfolio from '../components/Homepage/Portfolio';
 import Technology from '../components/Homepage/Technology';
 import Testimonials from '../components/Homepage/Testimonials';
-import Contact from '../components/Homepage/ContactSection';
 
 const Home = () => {
     return (
@@ -16,7 +15,6 @@ const Home = () => {
             <Portfolio />
             <Technology />
             <Testimonials />
-            <Contact />
         </>
     );
 };

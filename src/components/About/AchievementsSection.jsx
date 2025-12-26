@@ -10,9 +10,9 @@ const iconMap = {
 
 const AchievementsSection = ({ title, achievements }) => {
     return (
-        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-10 bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
                     {title}
                 </h2>
 
@@ -22,18 +22,18 @@ const AchievementsSection = ({ title, achievements }) => {
                         return (
                             <div
                                 key={index}
-                                className="text-center p-8 bg-white border border-gray-200 rounded-xl hover:border-teal-400 hover:shadow-lg transition-all group"
+                                className="text-center p-8 bg-[#112240] border border-[#00EFB5]/10 rounded-xl hover:border-[#00EFB5]/50 hover:shadow-[0_0_30px_rgba(0,239,181,0.05)] transition-all group"
                             >
-                                <div className="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
-                                    <Icon size={32} className="text-teal-500 group-hover:text-white transition-colors" />
+                                <div className="w-16 h-16 bg-[#00EFB5]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#00EFB5] transition-colors">
+                                    <Icon size={32} className="text-[#00EFB5] group-hover:text-[#0A192F] transition-colors" />
                                 </div>
-                                <div className="text-4xl font-bold text-gray-900 mb-2">
+                                <div className="text-4xl font-bold text-white mb-2">
                                     {achievement.value}
                                 </div>
-                                <div className="text-lg font-semibold text-gray-900 mb-2">
+                                <div className="text-lg font-semibold text-white mb-2">
                                     {achievement.label}
                                 </div>
-                                <div className="text-sm text-gray-600">
+                                <div className="text-sm text-slate-400">
                                     {achievement.description}
                                 </div>
                             </div>
@@ -46,3 +46,6 @@ const AchievementsSection = ({ title, achievements }) => {
 };
 
 export default AchievementsSection;
+
+
+

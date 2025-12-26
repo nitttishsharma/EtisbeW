@@ -16,7 +16,7 @@ const FooterSection = ({ columns, socialLinks, companyName }) => {
                             {socialLinks.linkedin && (
                                 <a
                                     href={socialLinks.linkedin}
-                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal-500 transition"
+                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-500 transition"
                                 >
                                     <Linkedin size={20} />
                                 </a>
@@ -24,7 +24,7 @@ const FooterSection = ({ columns, socialLinks, companyName }) => {
                             {socialLinks.twitter && (
                                 <a
                                     href={socialLinks.twitter}
-                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal-500 transition"
+                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-500 transition"
                                 >
                                     <Twitter size={20} />
                                 </a>
@@ -32,7 +32,7 @@ const FooterSection = ({ columns, socialLinks, companyName }) => {
                             {socialLinks.github && (
                                 <a
                                     href={socialLinks.github}
-                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal-500 transition"
+                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-500 transition"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -40,7 +40,7 @@ const FooterSection = ({ columns, socialLinks, companyName }) => {
                             {socialLinks.instagram && (
                                 <a
                                     href={socialLinks.instagram}
-                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal-500 transition"
+                                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-500 transition"
                                 >
                                     <Instagram size={20} />
                                 </a>
@@ -77,3 +77,6 @@ const FooterSection = ({ columns, socialLinks, companyName }) => {
 };
 
 export default FooterSection;
+
+
+

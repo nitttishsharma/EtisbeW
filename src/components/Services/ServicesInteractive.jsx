@@ -140,12 +140,12 @@ const ServicesInteractive = () => {
 
     if (!isHydrated) {
         return (
-            <div className="min-h-screen bg-white">
+            <div className="min-h-screen bg-[#0A192F]">
                 <div className="max-w-7xl mx-auto px-6 py-20 animate-pulse space-y-8">
-                    <div className="h-64 bg-gray-200 rounded-xl" />
+                    <div className="h-64 bg-[#112240] rounded-xl" />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[...Array(6)].map((_, i) => (
-                            <div key={i} className="h-96 bg-gray-200 rounded-xl" />
+                            <div key={i} className="h-96 bg-[#112240] rounded-xl" />
                         ))}
                     </div>
                 </div>
@@ -163,19 +163,19 @@ const ServicesInteractive = () => {
             <ServiceHero onConsultationClick={() => setIsConsultationOpen(true)} />
 
             {/* Services Grid */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-20 bg-transparent">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/10 border border-teal-500/30 rounded-full mb-6">
-                            <Rocket size={18} className="text-teal-500" />
-                            <span className="text-sm font-medium text-teal-600">Our Services</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#00EFB5]/10 border border-[#00EFB5]/30 rounded-full mb-6">
+                            <Rocket size={18} className="text-[#00EFB5]" />
+                            <span className="text-sm font-medium text-[#00EFB5]">Our Services</span>
                         </div>
 
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Comprehensive <span className="text-teal-500">Digital Solutions</span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                            Comprehensive <span className="text-[#00EFB5]">Digital Solutions</span>
                         </h2>
 
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                             From concept to launch and beyond, we build experiences that deliver real business value.
                         </p>
                     </div>
@@ -196,26 +196,26 @@ const ServicesInteractive = () => {
             <PricingCalculator />
 
             {/* CTA */}
-            <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+            <section className="py-20 bg-transparent">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <div className="bg-white border border-gray-200 rounded-xl p-12">
-                        <MessageCircle size={48} className="text-teal-500 mx-auto mb-6" />
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <div className="bg-[#112240] border border-[#00EFB5]/10 rounded-xl p-12">
+                        <MessageCircle size={48} className="text-[#00EFB5] mx-auto mb-6" />
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                             Ready to Manifest Your Vision?
                         </h2>
-                        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                        <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
                             Let’s discuss how we can transform your blueprint into a living digital experience.
                         </p>
 
                         <button
                             onClick={() => setIsConsultationOpen(true)}
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-600 transition"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-[#00EFB5] text-[#0A192F] font-bold rounded-lg hover:bg-white transition hover:scale-105"
                         >
                             Schedule Free Consultation
                             <ArrowRight size={20} />
                         </button>
 
-                        <p className="text-sm text-gray-500 mt-4">
+                        <p className="text-sm text-slate-500 mt-4">
                             30-minute discovery call • No commitment required
                         </p>
                     </div>
