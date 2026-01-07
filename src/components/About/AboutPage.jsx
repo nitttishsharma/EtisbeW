@@ -10,7 +10,7 @@ import CTASection from './CTASection';
 
 const AboutPage = () => {
     const heroData = {
-        title: "We Don't Mock—We Manifest",
+        title: "We Don't Mock We Manifest",
         subtitle: "Our Philosophy",
         description:
             "Where precision craftsmanship meets dynamic innovation. We transform traditional web development constraints into opportunities for interactive storytelling.",
@@ -57,85 +57,83 @@ const AboutPage = () => {
 
     const teamMembers = [
         {
-            name: 'Sarah Mitchell',
-            role: 'Founder & Creative Director',
+            name: 'Shubhansu Shukla',
+            role: 'Business & Experience Strategy',
             expertise: ['UI/UX Design', 'Brand Strategy', 'Interactive Design'],
             bio:
-                'With 12+ years of experience, Sarah leads our creative vision.',
+                '7+ years of experience aligning business goals with user-centric digital experiences and brand strategy.',
             image:
                 'https://img.rocket.new/generatedImages/rocket_gen_img_17d918e2b-1763301446194.png',
-            alt: 'Founder portrait',
+            alt: 'Business and experience strategy professional',
             social: {
-                linkedin: 'https://linkedin.com/in/sarahmitchell',
-                twitter: 'https://twitter.com/sarahmitchell',
+                email: 'shubhansu.shukla@gmail.com',
             },
         },
         {
-            name: 'Marcus Chen',
-            role: 'Lead Developer',
-            expertise: ['React', 'Next.js', 'TypeScript', 'WebGL'],
+            name: 'Abhishek Shah',
+            role: 'Engineering & Frontend Architecture',
+            expertise: ['React', 'Next.js', 'TypeScript', 'WebGL', 'WordPress', 'Shopify', 'WooCommerce', 'Magento', 'Joomla', 'Drupal'],
             bio:
-                'Marcus transforms complex challenges into elegant solutions.',
+                'Builds scalable, high-performance web platforms across modern frameworks and CMS ecosystems.',
             image:
                 'https://img.rocket.new/generatedImages/rocket_gen_img_1916b36eb-1763300773762.png',
-            alt: 'Lead developer portrait',
+            alt: 'Engineering and frontend architecture specialist',
             social: {
-                linkedin: 'https://linkedin.com/in/marcuschen',
-                github: 'https://github.com/marcuschen',
+                email: 'abhishek.shah@gmail.com',
             },
         },
         {
-            name: "Elena Rodriguez",
-            role: "Senior UX Designer",
-            expertise: ["User Research", "Interaction Design", "Prototyping"],
-            bio: "Elena's user-centered approach ensures every interaction is intuitive and delightful. She bridges the gap between user needs and technical possibilities.",
-            image: "https://img.rocket.new/generatedImages/rocket_gen_img_122df528a-1763295042340.png",
-            alt: "Hispanic woman with curly dark hair in professional attire smiling warmly",
+            name: 'Nitish Kumar Sharma',
+            role: 'Platform & Backend Engineering',
+            expertise: ['Node.js', 'API Design', 'MERN Stack', 'Next.js', 'TypeScript', 'WebGL'],
+            bio:
+                'Designs robust backend systems and APIs focused on scalability, performance, and integration.',
+            image:
+                'https://img.rocket.new/generatedImages/rocket_gen_img_114bd845f-1763298899395.png',
+            alt: 'Platform and backend engineering specialist',
             social: {
-                linkedin: "https://linkedin.com/in/elenarodriguez",
-                twitter: "https://twitter.com/elenarodriguez"
-            }
-        },
-        {
-            name: "David Park",
-            role: "Full Stack Engineer",
-            expertise: ["Node.js", "API Design", "Cloud Architecture"],
-            bio: "David builds robust backend systems that power our interactive experiences. His expertise ensures scalability and performance at every level.",
-            image: "https://img.rocket.new/generatedImages/rocket_gen_img_114bd845f-1763298899395.png",
-            alt: "Young Asian man with short hair in casual business attire in modern workspace",
-            social: {
-                linkedin: "https://linkedin.com/in/davidpark",
-                github: "https://github.com/davidpark"
-            }
-        },
-        {
-            name: "Olivia Thompson",
-            role: "Motion Designer",
-            expertise: ["Animation", "3D Graphics", "Interactive Media"],
-            bio: "Olivia brings our designs to life with stunning animations and interactive elements that captivate users and enhance storytelling.",
-            image: "https://img.rocket.new/generatedImages/rocket_gen_img_102d8e706-1763296029710.png",
-            alt: "Young woman with blonde hair in creative workspace with colorful background",
-            social: {
-                linkedin: "https://linkedin.com/in/oliviathompson",
-                twitter: "https://twitter.com/oliviathompson"
-            }
-        },
-        {
-            name: "James Wilson",
-            role: "Project Manager",
-            expertise: ["Agile", "Client Relations", "Strategic Planning"],
-            bio: "James ensures seamless project execution from concept to launch. His strategic approach keeps teams aligned and clients delighted.",
-            image: "https://img.rocket.new/generatedImages/rocket_gen_img_10c925a7f-1763294244184.png",
-            alt: "Professional man with beard in business casual attire in office environment",
-            social: {
-                linkedin: "https://linkedin.com/in/jameswilson"
+                email: 'nittishkumarsharma@gmail.com',
             }
         }
+        // {
+        //     name: "Shanvi Sahu",
+        //     role: "Senior UX Designer",
+        //     expertise: ["User Research", "Interaction Design", "Prototyping"],
+        //     bio: "Shanvi's user-centered approach ensures every interaction is intuitive and delightful. She bridges the gap between user needs and technical possibilities.",
+        //     image: "https://img.rocket.new/generatedImages/rocket_gen_img_122df528a-1763295042340.png",
+        //     alt: "Hispanic woman with curly dark hair in professional attire smiling warmly",
+        //     social: {
+        //         email: "shanvi.sahu@gmail.com",
+        //     }
+        // },
+
+        // {
+        //     name: "Subrat Sahu",
+        //     role: "Mobile Devloper",
+        //     expertise: ["Animation", "3D Graphics", "Interactive Media"],
+        //     bio: "Subrat builds robust backend systems that power our interactive experiences. His expertise ensures scalability and performance at every level.",
+        //     image: "https://img.rocket.new/generatedImages/rocket_gen_img_102d8e706-1763296029710.png",
+        //     alt: "Young woman with blonde hair in creative workspace with colorful background",
+        //     social: {
+        //         email: "subratsahu@gmail.com"
+        //     }
+        // },
+        // {
+        //     name: "James Wilson",
+        //     role: "Project Manager",
+        //     expertise: ["Agile", "Client Relations", "Strategic Planning"],
+        //     bio: "James ensures seamless project execution from concept to launch. His strategic approach keeps teams aligned and clients delighted.",
+        //     image: "https://img.rocket.new/generatedImages/rocket_gen_img_10c925a7f-1763294244184.png",
+        //     alt: "Professional man with beard in business casual attire in office environment",
+        //     social: {
+        //         linkedin: "https://linkedin.com/in/jameswilson"
+        //     }
+        // }
     ];
 
     const timelineEvents = [
         {
-            year: '2018',
+            year: '2022',
             title: 'Foundation',
             description:
                 'Etisbew Interactive was founded with a vision to transform web experiences.',
@@ -143,27 +141,35 @@ const AboutPage = () => {
             achievement: 'First Client Project',
         },
         {
-            year: '2021',
-            title: 'Industry Recognition',
+            year: '2023',
+            title: 'Capability Expansion',
             description:
-                'Multiple awards for innovative web experiences.',
-            icon: 'TrophyIcon',
-            achievement: '5 Industry Awards',
+                'Expanded our capabilities to include mobile app development and digital marketing.',
+            icon: 'PuzzlePieceIcon',
+            achievement: 'Full-Stack Delivery Model',
         },
         {
             year: '2024',
+            title: 'Delivery Maturity',
+            description:
+                'Established structured delivery processes focused on quality, performance, and reliability.',
+            icon: 'ClipboardDocumentCheckIcon',
+            achievement: 'Standardized Delivery Framework',
+        },
+        {
+            year: '2025',
             title: 'Continued Excellence',
             description:
-                '100+ projects delivered with 98% client satisfaction.',
+                '25+ projects delivered with 98% client satisfaction.',
             icon: 'ChartBarIcon',
-            achievement: '100+ Projects Delivered',
+            achievement: '25+ Projects Delivered',
         },
     ];
 
     const achievements = [
         {
             icon: 'BriefcaseIcon',
-            value: '150+',
+            value: '25+',
             label: 'Projects Delivered',
             description: 'Across diverse industries',
         },
@@ -175,9 +181,9 @@ const AboutPage = () => {
         },
         {
             icon: 'TrophyIcon',
-            value: '15+',
-            label: 'Industry Awards',
-            description: 'Recognition for excellence',
+            value: '60%+',
+            label: 'Repeat Clients',
+            description: 'Long-term partnerships built on trust',
         },
         {
             icon: 'ClockIcon',

@@ -37,6 +37,7 @@ const ProjectCard = ({ project, onViewDetails }) => {
                 <img
                     src={project.image}
                     alt={project.imageAlt}
+                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
                 />
 

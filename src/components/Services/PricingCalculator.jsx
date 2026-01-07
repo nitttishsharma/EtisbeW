@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import { Calculator } from 'lucide-react';
 
 const PricingCalculator = () => {
+    const [currency, setCurrency] = useState('USD');
+
+    const USD_TO_INR = 91;
+
     const [selections, setSelections] = useState({
         projectType: 'website',
         complexity: 'medium',
         timeline: 'standard',
     });
 
+
     const pricing = {
-        website: { low: 5000, medium: 8000, high: 12000 },
-        webapp: { low: 12000, medium: 18000, high: 25000 },
-        ecommerce: { low: 15000, medium: 22000, high: 30000 },
+        website: { low: 1000, medium: 2000, high: 3000 },
+        webapp: { low: 2000, medium: 3000, high: 4000 },
+        ecommerce: { low: 3000, medium: 4000, high: 5000 },
     };
 
     const getEstimate = () => {
@@ -20,6 +25,15 @@ const PricingCalculator = () => {
         return Math.round(base * multiplier);
     };
 
+    const getFormattedEstimate = () => {
+        const estimateUSD = getEstimate();
+
+        if (currency === 'INR') {
+            return `₹${(estimateUSD * USD_TO_INR).toLocaleString('en-IN')}`;
+        }
+
+        return `$${estimateUSD.toLocaleString()}`;
+    };
     return (
         <section className="py-20 bg-[#0A192F]">
             <div className="max-w-4xl mx-auto px-6">
@@ -96,8 +110,17 @@ const PricingCalculator = () => {
                     <div className="mt-8 pt-8 border-t border-[#00EFB5]/10 text-center">
                         <div className="text-sm text-slate-400 mb-2">Estimated Investment</div>
                         <div className="text-5xl font-bold text-[#00EFB5] drop-shadow-[0_0_15px_rgba(0,239,181,0.3)]">
-                            ${getEstimate().toLocaleString()}
+                            {getFormattedEstimate()}
                         </div>
+
+                        <button
+                            onClick={() => setCurrency(currency === 'USD' ? 'INR' : 'USD')}
+                            className="mt-4 inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold 
+               border border-[#00EFB5]/30 rounded-full text-[#00EFB5] 
+               hover:bg-[#00EFB5]/10 transition-all"
+                        >
+                            View in {currency === 'USD' ? '₹ INR' : '$ USD'}
+                        </button>
                         <p className="text-sm text-slate-500 mt-4">
                             *This is a rough estimate. Final pricing depends on specific requirements.
                         </p>

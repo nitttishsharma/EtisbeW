@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { Linkedin, Twitter, Github, Mail } from 'lucide-react';
 
 const TeamSection = ({ title, subtitle, members }) => {
     return (
@@ -48,28 +48,12 @@ const TeamSection = ({ title, subtitle, members }) => {
                                     ))}
                                 </div>
                                 <div className="flex gap-3 pt-4 border-t border-[#00EFB5]/10">
-                                    {member.social.linkedin && (
+                                    {member.social.email && (
                                         <a
-                                            href={member.social.linkedin}
+                                            href={member.social.email}
                                             className="text-slate-400 hover:text-[#00EFB5] transition-colors"
                                         >
-                                            <Linkedin size={20} />
-                                        </a>
-                                    )}
-                                    {member.social.twitter && (
-                                        <a
-                                            href={member.social.twitter}
-                                            className="text-slate-400 hover:text-[#00EFB5] transition-colors"
-                                        >
-                                            <Twitter size={20} />
-                                        </a>
-                                    )}
-                                    {member.social.github && (
-                                        <a
-                                            href={member.social.github}
-                                            className="text-slate-400 hover:text-[#00EFB5] transition-colors"
-                                        >
-                                            <Github size={20} />
+                                            <Mail size={20} />
                                         </a>
                                     )}
                                 </div>

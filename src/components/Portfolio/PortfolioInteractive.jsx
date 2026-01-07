@@ -52,28 +52,37 @@ const PortfolioInteractive = () => {
     const allProjects = [
         {
             id: "1",
-            title: "HealthHub Patient Portal",
-            client: "MediCare Solutions",
-            industry: "healthcare",
-            projectType: "portal",
-            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
-            image: "https://img.rocket.new/generatedImages/rocket_gen_img_1644aff77-1764659451775.png",
-            imageAlt: "Modern healthcare dashboard interface showing patient data visualization with blue and white color scheme",
-            description: "A comprehensive patient portal enabling secure health record access, appointment scheduling, and telemedicine consultations with real-time notifications.",
+            title: "Donation Website with Centralized Admin Portal",
+            client: "Mahamaya Trust",
+            industry: "Non-Profit",
+            projectType: "Website",
+            technologies: [
+                "TypeScript",
+                "Tailwind CSS",
+                "Node.js",
+                "Headless CMS"
+            ],
+            image: "https://drive.google.com/thumbnail?id=1bkhlevTBduKRTGXU0wOwf9QmQUtgkfx4&sz=w1000",
+            imageAlt: "Donation website dashboard showing campaign management, donor analytics, and payment status",
+            description:
+                "A secure and scalable donation platform enabling online contributions, campaign management, and content updates through a centralized CMS portal.",
             results: [
-                { metric: "Patient Engagement", value: "+185%" },
-                { metric: "Admin Time Saved", value: "40hrs/week" },
-                { metric: "Appointment No-Shows", value: "-65%" },
-                { metric: "User Satisfaction", value: "4.8/5" }],
-
-            challenge: "MediCare Solutions struggled with fragmented patient communication systems, leading to missed appointments, delayed care, and administrative bottlenecks. Patients had no centralized way to access their health records or communicate with providers, resulting in poor engagement and satisfaction scores.",
-            solution: "We developed an intuitive patient portal with secure authentication, real-time appointment scheduling, integrated telemedicine capabilities, and automated reminder systems. The platform features responsive design for mobile access, HIPAA-compliant data handling, and seamless integration with existing EMR systems.",
+                { metric: "Online Donations", value: "+120%" },
+                { metric: "Content Update Time", value: "-70%" },
+                { metric: "Admin Efficiency", value: "+60%" },
+                { metric: "Donor Retention", value: "+45%" }
+            ],
+            challenge:
+                "Mahamaya Trust relied on manual processes and static web pages to manage donations and campaigns. Content updates required technical intervention, donation tracking was fragmented, and administrators lacked real-time visibility into donor activity and campaign performance.",
+            solution:
+                "We built a modern donation website backed by a centralized CMS portal that allows non-technical administrators to manage campaigns, update content, and track donations in real time. The platform supports secure payment integrations, role-based admin access, automated donation receipts, and responsive design optimized for mobile donors.",
             testimonial: {
-                quote: "Etisbew transformed our patient experience completely. The portal reduced our administrative workload by 40% while dramatically improving patient satisfaction. It's exactly what we needed.",
-                author: "Dr. Sarah Mitchell",
-                position: "Chief Medical Officer",
+                quote:
+                    "The new platform simplified how we manage donations and campaigns. Our team can update content independently, track donations in real time, and focus more on our mission rather than operations.",
+                author: "Trust Operations Team",
+                position: "Program Management",
                 companyLogo: "https://img.rocket.new/generatedImages/rocket_gen_img_132d6be92-1764663829380.png",
-                companyLogoAlt: "MediCare Solutions company logo featuring medical cross symbol in blue"
+                companyLogoAlt: "Mahamaya Trust logo"
             }
         },
         {

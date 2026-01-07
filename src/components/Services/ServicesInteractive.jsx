@@ -36,7 +36,7 @@ const services = [
         ],
         deliverables: ['Responsive Design', 'SEO Optimization', 'Analytics Integration', 'CMS Setup'],
         timeline: '6–10 weeks',
-        startingPrice: '$8,000',
+        // startingPrice: '$8,000',
     },
     {
         id: 'web-applications',
@@ -54,7 +54,7 @@ const services = [
         ],
         deliverables: ['Full-Stack Development', 'Database Design', 'API Documentation', 'Testing Suite'],
         timeline: '12–20 weeks',
-        startingPrice: '$15,000',
+        // startingPrice: '$15,000',
     },
     {
         id: 'ecommerce-platforms',
@@ -72,7 +72,7 @@ const services = [
         ],
         deliverables: ['Payment Gateway', 'Product Management', 'Order Processing', 'Analytics Dashboard'],
         timeline: '14–24 weeks',
-        startingPrice: '$20,000',
+        //startingPrice: '$20,000',
     },
     {
         id: 'ui-ux-design',
@@ -90,7 +90,7 @@ const services = [
         ],
         deliverables: ['Design System', 'Prototypes', 'User Flows', 'Style Guide'],
         timeline: '4–8 weeks',
-        startingPrice: '$5,000',
+        //startingPrice: '$5,000',
     },
     {
         id: 'website-redesign',
@@ -108,7 +108,7 @@ const services = [
         ],
         deliverables: ['Redesigned Site', 'Content Migration', 'SEO Audit', 'Training Materials'],
         timeline: '8–14 weeks',
-        startingPrice: '$10,000',
+        //startingPrice: '$10,000',
     },
     {
         id: 'maintenance-support',
@@ -126,7 +126,7 @@ const services = [
         ],
         deliverables: ['Monthly Reports', 'Security Updates', 'Performance Optimization', '24/7 Monitoring'],
         timeline: 'Ongoing',
-        startingPrice: '$500 / mo',
+        // startingPrice: '$500 / mo',
     },
 ];
 

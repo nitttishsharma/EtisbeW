@@ -34,7 +34,7 @@ const ServiceCard = ({ service, onLearnMore }) => {
                 </ul>
             </div>
 
-            <div className="pt-6 border-t border-[#00EFB5]/10 mt-auto">
+            {/* <div className="pt-6 border-t border-[#00EFB5]/10 mt-auto">
                 <div className="flex items-center justify-between">
                     <div>
                         <span className="text-sm text-slate-500">Starting at</span>
@@ -48,7 +48,7 @@ const ServiceCard = ({ service, onLearnMore }) => {
                         <ArrowRight size={16} className={isHovered ? 'translate-x-1' : ''} />
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
