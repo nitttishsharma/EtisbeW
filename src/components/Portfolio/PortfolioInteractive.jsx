@@ -62,7 +62,8 @@ const PortfolioInteractive = () => {
                 "Node.js",
                 "Headless CMS"
             ],
-            image: "https://drive.google.com/thumbnail?id=1bkhlevTBduKRTGXU0wOwf9QmQUtgkfx4&sz=w1000",
+            //      image: "https://drive.google.com/thumbnail?id=1bkhlevTBduKRTGXU0wOwf9QmQUtgkfx4&sz=w1000",
+            image: "/common/Mahamayamanidr.JPG",
             imageAlt: "Donation website dashboard showing campaign management, donor analytics, and payment status",
             description:
                 "A secure and scalable donation platform enabling online contributions, campaign management, and content updates through a centralized CMS portal.",
@@ -81,7 +82,7 @@ const PortfolioInteractive = () => {
                     "The new platform simplified how we manage donations and campaigns. Our team can update content independently, track donations in real time, and focus more on our mission rather than operations.",
                 author: "Trust Operations Team",
                 position: "Program Management",
-                companyLogo: "https://img.rocket.new/generatedImages/rocket_gen_img_132d6be92-1764663829380.png",
+                companyLogo: "/common/Logo-1-1.png",
                 companyLogoAlt: "Mahamaya Trust logo"
             }
         },

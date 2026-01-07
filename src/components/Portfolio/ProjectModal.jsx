@@ -152,7 +152,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                         <img
                                             src={project.testimonial.companyLogo}
                                             alt={project.testimonial.companyLogoAlt}
-                                            className="w-full h-full object-contain filter grayscale invert brightness-0"
+                                            className="w-full h-full object-contain"
                                         />
                                     </div>
                                     <div>
