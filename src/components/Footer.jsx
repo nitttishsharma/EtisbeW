@@ -19,14 +19,13 @@ const Footer = () => {
             { label: 'Contact', path: '/contact' },
         ],
         resources: [
-
             { label: 'Case Studies', path: '/portfolio' },
             { label: 'Blog', path: '#' },
             { label: 'FAQ', path: '#' },
         ],
         legal: [
-            { label: 'Privacy Policy', path: '#' },
-            { label: 'Terms of Service', path: '#' },
+            { label: 'Privacy Policy', path: '/legal/Privacy.pdf' },
+            { label: 'Terms of Service', path: '/legal/Terms Of Service.pdf' },
             { label: 'Cookie Policy', path: '#' },
             { label: 'Accessibility', path: '#' },
         ],
