@@ -11,13 +11,12 @@ import {
 const testimonials = [
     {
         id: 1,
-        name: 'Sarah Mitchell',
-        role: 'CEO',
-        company: 'TechFlow Solutions',
-        image:
-            'https://img.rocket.new/generatedImages/rocket_gen_img_1d4551b80-1765511200828.png',
+        name: 'Shri Vyasnarayan Tiwari',
+        role: 'President',
+        company: 'Mahamaya Mandir',
+        image: "/common/Logo-1-1.png",
         content:
-            'Etisbew transformed our vision into a stunning interactive platform that exceeded expectations. The experience boosted our engagement metrics significantly.',
+            'The new platform simplified how we manage donations and campaigns. Our team can update content independently, track donations in real time, and focus more on our mission rather than operations..',
         rating: 5,
     },
     {
@@ -106,7 +105,7 @@ const Testimonials = () => {
                                 <img
                                     src={active.image}
                                     alt={active.name}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-teal-500"
+                                    className="w-16 h-16 rounded-full object-cover border-2 border-500"
                                 />
                                 <div>
                                     <div className="font-semibold text-gray-900">

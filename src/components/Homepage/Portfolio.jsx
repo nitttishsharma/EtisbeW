@@ -9,13 +9,12 @@ import { Link } from 'react-router-dom';
 const projects = [
     {
         id: 1,
-        title: 'TechFlow Analytics Dashboard',
+        title: 'Donation Website with Centralized Admin Portal',
         category: 'Web Application',
         description:
-            'Interactive data visualization platform with mouse-responsive charts and dynamic filtering.',
-        image:
-            'https://img.rocket.new/generatedImages/rocket_gen_img_1638d3f29-1764645307453.png',
-        tags: ['React', 'D3.js', 'Interactive'],
+            'A secure and scalable donation platform enabling online contributions, campaign management, and content updates through a centralized CMS portal..',
+        image: "/common/Mahamayamanidr.JPG",
+        tags: ['React', 'Tailwind CSS', "Vite", 'Interactive'],
     },
     {
         id: 2,
@@ -65,7 +64,7 @@ const Portfolio = () => {
                     </h2>
 
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        From blueprint to manifestation — explore how we transform ideas
+                        From blueprint to manifestation explore how we transform ideas
                         into living digital experiences that deliver real results.
                     </p>
                 </motion.div>

@@ -19,7 +19,7 @@ const Footer = () => {
             { label: 'Contact', path: '/contact' },
         ],
         resources: [
-            { label: 'Technology Playground', path: '/technology-playground' },
+
             { label: 'Case Studies', path: '/portfolio' },
             { label: 'Blog', path: '#' },
             { label: 'FAQ', path: '#' },
@@ -50,7 +50,7 @@ const Footer = () => {
                     <div className="lg:col-span-2">
                         <Link to="/" className="flex items-center gap-3 mb-4">
                             <span className="text-2xl font-serif font-bold text-white tracking-wider">
-                                Etisbew
+                                Etisbew Interactive
                             </span>
                         </Link>
 
