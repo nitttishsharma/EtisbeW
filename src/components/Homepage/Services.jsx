@@ -94,7 +94,7 @@ const Services = () => {
                     </h2>
 
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        We don&apos;t just build websites — we create living digital
+                        We don&apos;t just build websites we create living digital
                         experiences that drive engagement, conversions, and growth.
                     </p>
                 </div>
