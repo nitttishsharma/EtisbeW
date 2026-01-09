@@ -1,142 +1,156 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {
-    Briefcase,
-    ArrowRight,
-} from 'lucide-react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { Briefcase, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { projects as allProjects } from '../../constants/projects';
 
-const projects = [
-    {
-        id: 1,
-        title: 'Donation Website with Centralized Admin Portal',
-        category: 'Web Application',
-        description:
-            'A secure and scalable donation platform enabling online contributions, campaign management, and content updates through a centralized CMS portal..',
-        image: "/common/Mahamayamanidr.JPG",
-        tags: ['React', 'Tailwind CSS', "Vite", 'Interactive'],
-    },
-    {
-        id: 2,
-        title: 'Luxe Fashion E-commerce',
-        category: 'E-commerce Platform',
-        description:
-            'Premium shopping experience with geometric layouts and smooth cursor-driven motion.',
-        image:
-            'https://img.rocket.new/generatedImages/rocket_gen_img_1a0a04008-1764827205574.png',
-        tags: ['Next.js', 'Shopify', 'Animations'],
-    },
-    {
-        id: 3,
-        title: 'FinanceHub Portfolio Tracker',
-        category: 'Financial Platform',
-        description:
-            'Investment tracking platform with floating UI elements and real-time market visuals.',
-        image:
-            'https://img.rocket.new/generatedImages/rocket_gen_img_1204183d1-1764678372565.png',
-        tags: ['TypeScript', 'WebSocket', 'Real-time'],
-    },
-];
+// Featured projects for the homepage
+const projects = allProjects.filter(p => ['1', '8', '3'].includes(p.id));
 
-const Portfolio = () => {
+const ProjectCard = ({ project, index, progress, total }) => {
+    // Each card has a specific activation point based on total projects
+    const start = index / total;
+    const end = (index + 1) / total;
+
+    // Movement: Slide in from the bottom
+    // Card 0 doesn't slide, others slide in as scroll reaches their 'start'
+    const y = useTransform(progress, [start - 0.2, start], [1000, 0]);
+
+    // As the NEXT card comes in, this card should scale down and fade slightly
+    const nextStart = (index + 1) / total;
+    const scale = useTransform(progress, [nextStart, nextStart + 0.1], [1, 0.95]);
+    const opacity = useTransform(progress, [nextStart, nextStart + 0.1], [1, 0.8]);
+
     return (
-        <section className="py-24 lg:py-32 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
-                {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
-                >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/10 border border-teal-500/30 rounded-full mb-6">
-                        <Briefcase size={16} className="text-teal-500" />
-                        <span className="text-sm font-medium text-teal-600">
-                            Featured Work
-                        </span>
+        <motion.div
+            style={{
+                y: index === 0 ? 0 : y,
+                scale,
+                opacity,
+                zIndex: index,
+                // Offset slightly based on index for a stacked deck look
+                marginTop: `${index * 20}px`
+            }}
+            className="absolute inset-0 flex items-center justify-center p-6"
+        >
+            <div
+                className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row w-full max-w-5xl h-[500px] md:h-[450px]"
+                style={{ backgroundColor: project.color }}
+            >
+                {/* Content */}
+                <div className="flex-1 p-8 md:p-12 flex flex-col justify-between">
+                    <div>
+                        <div className="text-sm font-bold text-teal-600 mb-2 md:mb-4 tracking-widest uppercase text-left">
+                            {project.category}
+                        </div>
+                        <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-left">
+                            {project.title}
+                        </h3>
+                        <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-8 leading-relaxed line-clamp-2 md:line-clamp-3 text-left">
+                            {project.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4 md:mb-8">
+                            {project.tags.map((tag, i) => (
+                                <span
+                                    key={i}
+                                    className="px-3 py-1 text-xs md:text-sm font-medium bg-white/50 border border-gray-200 text-teal-700 rounded-full"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
                     </div>
 
-                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                        Projects That{' '}
-                        <span className="text-teal-500">Came to Life</span>
-                    </h2>
-
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        From blueprint to manifestation explore how we transform ideas
-                        into living digital experiences that deliver real results.
-                    </p>
-                </motion.div>
-
-                {/* Grid */}
-                <div className="grid lg:grid-cols-3 gap-8 mb-14">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={project.id}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-teal-400 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,191,165,0.15)]"
+                    <div className="text-left">
+                        <Link
+                            to="/portfolio"
+                            className="inline-flex items-center text-base md:text-lg font-bold text-teal-600 hover:text-teal-500 transition-colors"
                         >
-                            {/* Image */}
-                            <div className="relative h-64 overflow-hidden">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
-                            </div>
+                            Explore Case Study
+                            <ArrowRight size={20} className="ml-2" />
+                        </Link>
+                    </div>
+                </div>
 
-                            {/* Content */}
-                            <div className="p-6">
-                                <div className="text-sm font-medium text-teal-600 mb-2">
-                                    {project.category}
-                                </div>
+                {/* Image */}
+                <div className="flex-1 relative overflow-hidden h-48 md:h-auto">
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+        </motion.div>
+    );
+};
 
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-teal-500 transition-colors">
-                                    {project.title}
-                                </h3>
+const Portfolio = () => {
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end end"]
+    });
 
-                                <p className="text-gray-600 mb-4 leading-relaxed">
-                                    {project.description}
-                                </p>
+    return (
+        <section ref={containerRef} className="relative h-[400vh] bg-gray-50">
+            <div className="sticky top-0 h-screen w-full flex flex-col overflow-hidden">
+                {/* Header Container */}
+                <div className="relative z-50 w-full pt-16 md:pt-24 px-6">
+                    <motion.div
+                        style={{
+                            opacity: useTransform(scrollYProgress, [0, 0.05], [1, 0.4]),
+                            scale: useTransform(scrollYProgress, [0, 0.05], [1, 0.9])
+                        }}
+                        className="text-center"
+                    >
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/10 border border-teal-500/30 rounded-full mb-4">
+                            <Briefcase size={16} className="text-teal-500" />
+                            <span className="text-sm font-medium text-teal-600">
+                                Featured Work
+                            </span>
+                        </div>
 
-                                <div className="flex flex-wrap gap-2 mb-5">
-                                    {project.tags.map((tag, i) => (
-                                        <span
-                                            key={i}
-                                            className="px-3 py-1 text-xs font-medium bg-teal-500/10 text-teal-600 rounded-full"
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
+                        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
+                            Projects That <span className="text-teal-500">Came to Life</span>
+                        </h2>
 
-                                <Link
-                                    to="/portfolio"
-                                    className="inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-500 transition-colors"
-                                >
-                                    View Case Study
-                                    <ArrowRight size={16} className="ml-2" />
-                                </Link>
-                            </div>
-                        </motion.div>
+                        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+                            Scroll to explore our latest digital manifestations.
+                        </p>
+                    </motion.div>
+                </div>
+
+                {/* Deck Container */}
+                <div className="flex-1 relative w-full h-full overflow-hidden">
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                            index={index}
+                            progress={scrollYProgress}
+                            total={projects.length}
+                        />
                     ))}
                 </div>
 
-                {/* CTA */}
-                <div className="text-center">
+                {/* Final CTA Reveal */}
+                <motion.div
+                    style={{
+                        opacity: useTransform(scrollYProgress, [0.9, 0.98], [0, 1]),
+                        y: useTransform(scrollYProgress, [0.9, 0.98], [50, 0]),
+                        pointerEvents: useTransform(scrollYProgress, p => p > 0.9 ? 'auto' : 'none')
+                    }}
+                    className="absolute bottom-12 left-0 right-0 text-center z-[100] px-6"
+                >
                     <Link
                         to="/portfolio"
-                        className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                        className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-teal-500 rounded-xl hover:bg-teal-600 transition-all duration-300 shadow-2xl hover:scale-105"
                     >
                         View Full Portfolio
                         <ArrowRight size={20} className="ml-2" />
                     </Link>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

@@ -1,27 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { projects as allProjects } from '../../constants/projects';
 
 const CaseStudyShowcase = () => {
-    const caseStudies = [
-        {
-            title: 'HealthHub Patient Portal',
-            client: 'MediCare Solutions',
-            result: '+185% Patient Engagement',
-            image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1644aff77-1764659451775.png',
-        },
-        {
-            title: 'ShopSphere E-Commerce',
-            client: 'Urban Lifestyle Brands',
-            result: '+142% Conversion Rate',
-            image: 'https://img.rocket.new/generatedImages/rocket_gen_img_12d7de71f-1764676026833.png',
-        },
-        {
-            title: 'FinanceFlow Dashboard',
-            client: 'Quantum Capital',
-            result: '10x Faster Processing',
-            image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1f0a26062-1765030360899.png',
-        },
-    ];
+    // Selection for Case Study Showcase
+    const caseStudies = allProjects.filter(p => ['1', '2', '3'].includes(p.id));
 
     return (
         <section className="py-20 bg-[#0A192F]">
@@ -52,7 +35,9 @@ const CaseStudyShowcase = () => {
                                 <h3 className="text-xl font-bold text-white mb-2">{study.title}</h3>
                                 <p className="text-sm text-slate-400 mb-4">{study.client}</p>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-lg font-bold text-[#00EFB5]">{study.result}</span>
+                                    <span className="text-lg font-bold text-[#00EFB5]">
+                                        {study.results?.[0]?.value} {study.results?.[0]?.metric}
+                                    </span>
                                     <ArrowRight className="text-[#00EFB5] group-hover:translate-x-1 transition-transform" size={20} />
                                 </div>
                             </div>

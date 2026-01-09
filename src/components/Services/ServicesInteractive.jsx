@@ -196,7 +196,7 @@ const ServicesInteractive = () => {
             <PricingCalculator />
 
             {/* CTA */}
-            <section className="py-20 bg-transparent">
+            <section className="py-20 bg-[#112240]/50">
                 <div className="max-w-4xl mx-auto px-6 text-center">
                     <div className="bg-[#112240] border border-[#00EFB5]/10 rounded-xl p-12">
                         <MessageCircle size={48} className="text-[#00EFB5] mx-auto mb-6" />

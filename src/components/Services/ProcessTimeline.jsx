@@ -31,7 +31,7 @@ const ProcessTimeline = () => {
     ];
 
     return (
-        <section className="py-20 bg-[#0A192F]">
+        <section className="py-20 bg-[#112240]/50">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

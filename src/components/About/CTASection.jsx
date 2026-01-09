@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTASection = ({ title, description, primaryCTA, secondaryCTA }) => {
     return (
-        <section className="py-20 bg-[#0A192F]">
+        <section className="py-20 bg-transparent">
             <div className="max-w-4xl mx-auto px-6 text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                     {title}

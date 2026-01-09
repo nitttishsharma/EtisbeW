@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 const ServiceHero = ({ onConsultationClick }) => {
     return (
-        <section className="relative pt-32 pb-20 px-6 bg-[#0A192F] overflow-hidden">
+        <section className="relative pt-32 pb-20 px-6 bg-[#112240]/50 overflow-hidden">
             <div className="max-w-7xl mx-auto text-center">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#00EFB5]/10 border border-[#00EFB5]/30 rounded-full mb-6">
                     <Sparkles size={18} className="text-[#00EFB5]" />
