@@ -55,7 +55,7 @@ const Footer = () => {
 
                         <p className="text-gray-300 max-w-sm mb-6">
                             Transforming blueprints into living digital experiences.
-                            We don&apos;t mock — we manifest.
+                            We don&apos;t mock we manifest.
                         </p>
 
                         <div className="flex gap-4">

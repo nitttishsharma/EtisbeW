@@ -150,44 +150,44 @@ export const projects = [
         solution: "We created an immersive property portal with 360° virtual tours, interactive maps, advanced filtering, and integrated CRM. The platform features high-performance image optimization, SEO-friendly architecture, and automated lead nurturing workflows.",
         color: '#FFFBEB'
     },
-    {
-        id: "7",
-        title: "HealthHub Patient Portal",
-        client: "MediCare Solutions",
-        industry: "healthcare",
-        projectType: "portal",
-        category: "Healthcare Portal",
-        technologies: ["React", "Node.js", "PostgreSQL"],
-        tags: ['Healthcare', 'Portal', 'React'],
-        image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1644aff77-1764659451775.png',
-        imageAlt: "Patient portal dashboard showing health metrics and appointment scheduling",
-        description: "A comprehensive patient portal providing secure access to medical records, appointment scheduling, and direct communication with healthcare providers.",
-        results: [
-            { metric: "Patient Engagement", value: "+185%" },
-            { metric: "Admin Time", value: "-40%" }
-        ],
-        challenge: "MediCare Solutions needed a way to reduce administrative burden and improve patient communication. Their previous manual systems were inefficient and led to high no-show rates.",
-        solution: "We developed a secure, HIPAA-compliant patient portal that automates appointment scheduling, provides real-time access to lab results, and includes an encrypted messaging system.",
-        color: '#F0F9FF'
-    },
-    {
-        id: "8",
-        title: "Luxe Fashion E-commerce",
-        client: "Urban Lifestyle Brands",
-        industry: "ecommerce",
-        projectType: "ecommerce",
-        category: "E-commerce Platform",
-        technologies: ["Next.js", "Shopify", "Framer Motion"],
-        tags: ['Next.js', 'Shopify', 'Animations'],
-        image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1a0a04008-1764827205574.png',
-        imageAlt: "Luxury fashion e-commerce storefront with high-end apparel",
-        description: "Premium shopping experience with geometric layouts and smooth cursor-driven motion designed for high-end fashion retail.",
-        results: [
-            { metric: "Average Order Value", value: "+35%" },
-            { metric: "Mobile Conversion", value: "+90%" }
-        ],
-        challenge: "The brand needed a digital experience that matched their physical store's luxury feel. Most e-commerce templates were too generic and failed to convey the premium nature of their products.",
-        solution: "We created a bespoke e-commerce experience using Next.js and Shopify, featuring unique layout transitions, ultra-fast performance, and high-fidelity product imagery.",
-        color: '#FDF2F8'
-    }
+    // {
+    //     id: "7",
+    //     title: "HealthHub Patient Portal",
+    //     client: "MediCare Solutions",
+    //     industry: "healthcare",
+    //     projectType: "portal",
+    //     category: "Healthcare Portal",
+    //     technologies: ["React", "Node.js", "PostgreSQL"],
+    //     tags: ['Healthcare', 'Portal', 'React'],
+    //     image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1644aff77-1764659451775.png',
+    //     imageAlt: "Patient portal dashboard showing health metrics and appointment scheduling",
+    //     description: "A comprehensive patient portal providing secure access to medical records, appointment scheduling, and direct communication with healthcare providers.",
+    //     results: [
+    //         { metric: "Patient Engagement", value: "+185%" },
+    //         { metric: "Admin Time", value: "-40%" }
+    //     ],
+    //     challenge: "MediCare Solutions needed a way to reduce administrative burden and improve patient communication. Their previous manual systems were inefficient and led to high no-show rates.",
+    //     solution: "We developed a secure, HIPAA-compliant patient portal that automates appointment scheduling, provides real-time access to lab results, and includes an encrypted messaging system.",
+    //     color: '#F0F9FF'
+    // },
+    // {
+    //     id: "8",
+    //     title: "Luxe Fashion E-commerce",
+    //     client: "Urban Lifestyle Brands",
+    //     industry: "ecommerce",
+    //     projectType: "ecommerce",
+    //     category: "E-commerce Platform",
+    //     technologies: ["Next.js", "Shopify", "Framer Motion"],
+    //     tags: ['Next.js', 'Shopify', 'Animations'],
+    //     image: 'https://img.rocket.new/generatedImages/rocket_gen_img_1a0a04008-1764827205574.png',
+    //     imageAlt: "Luxury fashion e-commerce storefront with high-end apparel",
+    //     description: "Premium shopping experience with geometric layouts and smooth cursor-driven motion designed for high-end fashion retail.",
+    //     results: [
+    //         { metric: "Average Order Value", value: "+35%" },
+    //         { metric: "Mobile Conversion", value: "+90%" }
+    //     ],
+    //     challenge: "The brand needed a digital experience that matched their physical store's luxury feel. Most e-commerce templates were too generic and failed to convey the premium nature of their products.",
+    //     solution: "We created a bespoke e-commerce experience using Next.js and Shopify, featuring unique layout transitions, ultra-fast performance, and high-fidelity product imagery.",
+    //     color: '#FDF2F8'
+    // }
 ];
