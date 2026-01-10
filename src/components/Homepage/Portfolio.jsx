@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { projects as allProjects } from '../../constants/projects';
 
 // Featured projects for the homepage
-const projects = allProjects.filter(p => ['1', '8', '3'].includes(p.id));
+const projects = allProjects.filter(p => ['1', '2', '3'].includes(p.id));
 
 const ProjectCard = ({ project, index, progress, total }) => {
     // Each card has a specific activation point based on total projects
