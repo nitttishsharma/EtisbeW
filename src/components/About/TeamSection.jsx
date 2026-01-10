@@ -20,13 +20,13 @@ const TeamSection = ({ title, subtitle, members }) => {
                             key={index}
                             className="bg-[#112240] border border-[#00EFB5]/10 rounded-xl overflow-hidden hover:border-[#00EFB5]/30 hover:shadow-[0_0_30px_rgba(0,239,181,0.05)] transition-all group"
                         >
-                            <div className="aspect-square overflow-hidden bg-[#0A192F]">
-                                <img
+                            {/* <div className="aspect-square overflow-hidden bg-[#0A192F]">
+                                {/* <img
                                     src={member.image}
                                     alt={member.alt}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100"
-                                />
-                            </div>
+                                /> 
+                        </div> */}
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-white mb-1">
                                     {member.name}
@@ -62,7 +62,7 @@ const TeamSection = ({ title, subtitle, members }) => {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
