@@ -62,8 +62,8 @@ const AboutPage = () => {
             expertise: ['UI/UX Design', 'Brand Strategy', 'Interactive Design'],
             bio:
                 '7+ years of experience aligning business goals with user-centric digital experiences and brand strategy.',
-            image:
-                'https://img.rocket.new/generatedImages/rocket_gen_img_17d918e2b-1763301446194.png',
+            // image:
+            //     'https://img.rocket.new/generatedImages/rocket_gen_img_17d918e2b-1763301446194.png',
             alt: 'Business and experience strategy professional',
             social: {
                 email: 'shubhansu.shukla@gmail.com',
@@ -75,8 +75,8 @@ const AboutPage = () => {
             expertise: ['React', 'Next.js', 'TypeScript', 'WebGL', 'WordPress', 'Shopify', 'WooCommerce', 'Magento', 'Joomla', 'Drupal'],
             bio:
                 'Builds scalable, high-performance web platforms across modern frameworks and CMS ecosystems.',
-            image:
-                'https://img.rocket.new/generatedImages/rocket_gen_img_1916b36eb-1763300773762.png',
+            // image:
+            //     'https://img.rocket.new/generatedImages/rocket_gen_img_1916b36eb-1763300773762.png',
             alt: 'Engineering and frontend architecture specialist',
             social: {
                 email: 'abhishek.shah@gmail.com',
@@ -88,8 +88,8 @@ const AboutPage = () => {
             expertise: ['Node.js', 'API Design', 'MERN Stack', 'Next.js', 'TypeScript', 'WebGL'],
             bio:
                 'Designs robust backend systems and APIs focused on scalability, performance, and integration.',
-            image:
-                'https://img.rocket.new/generatedImages/rocket_gen_img_114bd845f-1763298899395.png',
+            // image:
+            //     'https://img.rocket.new/generatedImages/rocket_gen_img_114bd845f-1763298899395.png',
             alt: 'Platform and backend engineering specialist',
             social: {
                 email: 'nittishkumarsharma@gmail.com',
