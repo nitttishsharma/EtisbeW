@@ -82,19 +82,7 @@ const AboutPage = () => {
                 email: 'abhishek.shah@gmail.com',
             },
         },
-        {
-            name: 'Nitish Kumar Sharma',
-            role: 'Platform & Backend Engineering',
-            expertise: ['Node.js', 'API Design', 'MERN Stack', 'Next.js', 'TypeScript', 'WebGL'],
-            bio:
-                'Designs robust backend systems and APIs focused on scalability, performance, and integration.',
-            // image:
-            //     'https://img.rocket.new/generatedImages/rocket_gen_img_114bd845f-1763298899395.png',
-            alt: 'Platform and backend engineering specialist',
-            social: {
-                email: 'nittishkumarsharma@gmail.com',
-            }
-        }
+        
         // {
         //     name: "Shanvi Sahu",
         //     role: "Senior UX Designer",
